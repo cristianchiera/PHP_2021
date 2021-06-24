@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function trivia(xx){
+                msg='';
+                xx=[];
+                for (var i=1;i<=3;i++){
+                xx.push(calculo());
+            }
+            xx.forEach(element => {
+                msg+=element+'\n';
+            });
+
+          return alert(msg);
+        }
+        function calculo(){      
+            var nombre = prompt('Ingrese su Nombre');
+            var ee=edad(prompt('Ingrese su edad'));
+            var usuario1=nombre +':'+ee;
+            return (usuario1);                
+        }
+        function edad (edad){
+
+            edad=parseInt(edad);
+                if (edad>=18){
+                    result='es mayor de edad';
+                }else{
+                    result='NO es mayor de edad';
+                }
+                return result;
+            }      
+    </script> 
+</head>
+<body onload="trivia()"> 
+    
+</body>
+</html>
